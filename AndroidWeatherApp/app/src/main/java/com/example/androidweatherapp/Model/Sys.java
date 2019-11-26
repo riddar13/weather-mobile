@@ -3,7 +3,7 @@ package com.example.androidweatherapp.Model;
 public class Sys {
     private int type;
     private int id;
-    private String;
+    private String country;
     private int sunrise;
     private int sunset;
 
@@ -24,6 +24,14 @@ public class Sys {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
     }
 
     public int getSunrise() {
