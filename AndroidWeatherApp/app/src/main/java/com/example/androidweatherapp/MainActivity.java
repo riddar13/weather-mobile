@@ -7,6 +7,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.Manifest;
 import android.os.Bundle;
 import android.os.Looper;
+import android.util.Log;
 import android.widget.Toolbar;
 
 import com.example.androidweatherapp.Adapter.ViewPagerAdapter;
@@ -86,6 +87,9 @@ public class MainActivity extends AppCompatActivity {
                 setupViewPager(viewPager);
                 tabLayout = (TabLayout)findViewById(R.id.tabs);
                 tabLayout.setupWithViewPager(viewPager);
+
+                //Log
+                Log.d("Location", locationResult.getLastLocation().getLatitude()+"/"+locationResult.getLastLocation().getLongitude());
             }
         };
     }
