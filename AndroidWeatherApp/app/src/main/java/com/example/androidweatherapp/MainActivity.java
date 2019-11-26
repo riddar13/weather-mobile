@@ -1,14 +1,11 @@
 package com.example.androidweatherapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.viewpager.widget.ViewPager;
 
 import android.Manifest;
 import android.os.Bundle;
 import android.os.Looper;
 import android.util.Log;
-import android.widget.Toolbar;
 
 import com.example.androidweatherapp.Adapter.ViewPagerAdapter;
 import com.example.androidweatherapp.Common.Common;
@@ -26,6 +23,12 @@ import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
 
 import java.util.List;
+
+import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.viewpager.widget.ViewPager;
+
+//import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -102,9 +105,6 @@ public class MainActivity extends AppCompatActivity {
         locationRequest.setInterval(5000);
         locationRequest.setFastestInterval(3000);
         locationRequest.setSmallestDisplacement(10.0f);
-    }
-
-    private void setSupportActionBar(Toolbar toolbar) {
     }
 
     private void setupViewPager(ViewPager ViewPager) {
