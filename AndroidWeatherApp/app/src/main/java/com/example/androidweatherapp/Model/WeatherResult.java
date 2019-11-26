@@ -1,4 +1,5 @@
 package com.example.androidweatherapp.Model;
+import java.util.List;
 
 public class WeatherResult {
     private Coord coord;
