@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.os.Looper;
 import android.widget.Toolbar;
 
+import com.example.androidweatherapp.Adapter.ViewPagerAdapter;
 import com.example.androidweatherapp.Common.Common;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
@@ -100,8 +101,10 @@ public class MainActivity extends AppCompatActivity {
     private void setSupportActionBar(Toolbar toolbar) {
     }
 
-    public void setupViewPager(ViewPager upViewPager) {
-
+    private void setupViewPager(ViewPager ViewPager) {
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(TodayWeatherFragment.getInstance(),"Today");
+        viewPager.setAdapter(adapter);
     }
 
 }
