@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">AndroidWeatherApp</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Today Weather Demo</string>
+    <string name="app_name">WeatherApp</string>
+    <string name="info">0</string>
+    <string name="random_heading">Number between 0 and %1d</string>
 </resources>
